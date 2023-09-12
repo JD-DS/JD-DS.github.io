@@ -1133,64 +1133,84 @@ figure.dotted-bg {
     -o-object-fit: cover;
     object-fit: cover; }
 
-.portfolio-item {
-  overflow: hidden; }
+    .portfolio-item {
+      overflow: hidden; 
+  }
   .portfolio-item img {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    position: relative;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      position: relative;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); 
+  }
+  /* Commented out the zoom effect on hover
   .portfolio-item:hover img {
-    -webkit-transform: scale(1.09);
-    -ms-transform: scale(1.09);
-    transform: scale(1.09); }
-
-.portfolio-item, .blog-item {
-  display: block;
-  overflow: hidden;
-  position: relative; }
+      -webkit-transform: scale(1.09);
+      -ms-transform: scale(1.09);
+      transform: scale(1.09); 
+  }
+  */
+  
+  .portfolio-item, .blog-item {
+      display: block;
+      overflow: hidden;
+      position: relative; 
+  }
+  
   .portfolio-item .overlay, .blog-item .overlay {
-    position: relative;
-    z-index: 8;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
-    .portfolio-item .overlay, .portfolio-item .overlay:before, .blog-item .overlay, .blog-item .overlay:before {
+      position: relative;
+      z-index: 8;
+      opacity: 1; /* Modified this line */
+      visibility: visible; /* Modified this line */
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; 
+  }
+  
+  .portfolio-item .overlay, .portfolio-item .overlay:before, .blog-item .overlay, .blog-item .overlay:before {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0; }
-    .portfolio-item .overlay:before, .blog-item .overlay:before {
-      background: rgba(0, 0, 0, 0.5);
-      content: ""; }
+      bottom: 0; 
+  }
+  .portfolio-item .overlay:before, .blog-item .overlay:before {
+      background: rgba(0, 0, 0, 0.35);
+      content: ""; 
+  }
   .portfolio-item .wrap-icon, .blog-item .wrap-icon {
-    position: absolute;
-    right: 20px;
-    color: #ffffff;
-    top: 20px; }
+      position: absolute;
+      right: 20px;
+      color: #ffffff;
+      top: 20px; 
+  }
   .portfolio-item .portfolio-item-content, .blog-item .portfolio-item-content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px; }
-    .portfolio-item .portfolio-item-content h3, .portfolio-item .portfolio-item-content p, .blog-item .portfolio-item-content h3, .blog-item .portfolio-item-content p {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px; 
+  }
+  .portfolio-item .portfolio-item-content h3, .portfolio-item .portfolio-item-content p, .blog-item .portfolio-item-content h3, .blog-item .portfolio-item-content p {
       color: #ffffff;
       margin: 0;
-      padding: 0; }
-    .portfolio-item .portfolio-item-content h3, .blog-item .portfolio-item-content h3 {
-      font-size: 18px; }
-    .portfolio-item .portfolio-item-content p, .blog-item .portfolio-item-content p {
+      padding: 0; 
+  }
+  .portfolio-item .portfolio-item-content h3, .blog-item .portfolio-item-content h3 {
+      font-size: 18px; 
+  }
+  .portfolio-item .portfolio-item-content p, .blog-item .portfolio-item-content p {
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(255, 255, 255, 0.5); 
+  }
+  /* Commented out the overlay appearance change on hover
   .portfolio-item:hover .overlay, .blog-item:hover .overlay {
-    opacity: 1;
-    visibility: visible; }
+      opacity: 1;
+      visibility: visible; 
+  }
+  */
+  
 
 .blog-item {
   margin-left: 0 !important; }
