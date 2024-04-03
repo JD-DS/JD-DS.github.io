@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Space Free HTML Template by Colorlib</title>
+  <title>Portfolio</title>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
@@ -38,12 +38,16 @@
   <nav class="site-nav dark mb-5 site-navbar-target">
     <div class="container">
       <div class="site-navigation">
-        <a href="index.html" class="logo m-0">Portfolio<span class="text-primary">.</span></a>
+        <a href="index.html" class="logo m-0">Jack Donohue<span class="text-primary">.</span></a>
 
         <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+
           <li><a href="#home-section" class="nav-link active">Home</a></li>
+
           <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-          <li><a href="#blog-section" class="nav-link">Blog Posts</a></li>
+
+          <!-- <li><a href="#blog-section" class="nav-link">Blog Posts</a></li> -->
+
           <li><a href="#about-section" class="nav-link">About</a></li>
           
         </ul>
@@ -56,42 +60,71 @@
     </div>
   </nav>
 
+  
 
+<div class="untree_co-section pb-0" id="home-section">
 
-  <div class="untree_co-section pb-0" id="home-section">
-    
-    <div class="container">
+  <div class="container">
+    <div class="social-buttons">
+      <a href="https://linkedin.com/in/jack-n-donohue" target="_blank" class="btn social-button linkedin">LinkedIn</a>
+      <a href="https://github.com/JD-DS" target="_blank" class="btn social-button github">GitHub</a>
+      <a href="https://www.kaggle.com/jackdonz" target="_blank" class="btn social-button kaggle">Kaggle</a>
 
-      <p class="gsap-reveal-hero">
-        <a href="https://github.com/JD-DS?tab=repositories" target="_blank" class="btn btn-black">GitHub</a>
-        <a href="https://linkedin.com/in/jack-n-donohue" target="_blank" class="btn btn-black">Linkedin</a>
-        <!-- <a href="https://medium.com/@jd-ds" target="_blank" class="btn btn-black">Medium</a> -->
-        <a href="https://www.kaggle.com/johndonz12" target="_blank" class="btn btn-black">Kaggle</a>
-        <!-- <a href="https://insightsengineered.substack.com/" target="_blank" class="btn btn-black">Substack</a> -->
+      <!-- <a href="https://www.youtube.com/c/your_youtube_channel" target="_blank" class="btn social-button youtube">YouTube</a> -->
+      <!-- <a href="https://medium.com/@your_medium_profile" target="_blank" class="btn social-button medium">Medium</a> -->
+      <!-- <a href="https://your_newsletter_signup_page" target="_blank" class="btn social-button newsletter">Newsletter</a> -->
         
-      </p>
-
-      <h1 class="heading gsap-reveal-hero mb-0"><strong><br>Hey! I'm Jack Donohue<span class="text-primary">.</span></strong></h1>
-      <h2 class="subheading gsap-reveal-hero mb-4">
-        <br> A current graduate student at the University of Virginia studying Data Science. Check out my portfolio below!</h2><br>
-        
-        
-      </h2>
-     
-    </div>
   </div>
+</div>
+
+<style>
+.social-buttons {
+  background-color: #afaaaa; /* Light grey background */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block; /* Wrap content */
+}
+</style>
+
+
+
+<style>
+    /* Basic button styling */
+    .social-button {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Color schemes for different social media buttons */
+    .github { background-color: #333; }
+    .linkedin { background-color: #017bbd; }
+    .youtube { background-color: #FF0000; }
+    .kaggle { background-color: #66ccf5; }
+    .medium { background-color: #00AB6C; }
+    .newsletter { background-color: #333333; }
+</style>
 
 
 
   
-  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
-    <div class="container">
-<!--       <div class="row">
-        <div class="col-lg-12 mx-auto contents ">
-        -->
+<div class="untree_co-section untree_co-section-4 pb-0" id="portfolio-section">
+  <div class="container">
+    <h1 class="section-heading gsap-reveal-hero mb-0"><strong>Projects</strong></h1>
+    <div class="wave gsap-reveal-hero">
+      <svg>
+        <path d="M10,10 L50,100 L90,50"></path>
+      </svg>
+    </div>
+    <!-- Ensure the SVG closing tag is before opening the portfolio content -->
+    <div class="portfolio-wrapper">
+      <div id="posts" class="row">
 
-        <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-        <div id="portfolio-single-holder"></div>
+      
 
 
         <div class="portfolio-wrapper">
@@ -353,10 +386,10 @@
       <div class="container">
         <div class="row mb-4">
           <div class="col-lg-6 text-left">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>About</strong></h2>
-            <p class="gsap-reveal-hero">Hello, and welcome! I'm an ambitious Data Science Master's student with a distinct blend of professional experiences 
+            <h1 class="section-heading gsap-reveal-hero mb-0"><strong>About</strong></h1>
+            <!-- <p class="gsap-reveal-hero">Hello, and welcome! I'm an ambitious Data Science Master's student with a distinct blend of professional experiences 
                                         ranging from quantitative analytics to military service. I specialize in machine learning and am committed to transforming 
-                                        complex data into actionable, insightful strategies.</p>
+                                        complex data into actionable, insightful strategies.</p> -->
 
             <div class="wave gsap-reveal-hero" >
               <svg>
@@ -380,7 +413,7 @@
 
             <figure class="dotted-bg gsap-reveal-img">
 
-              <img src="images/dots.png" alt="Image" class="img-fluid">
+              <img src="images/headshot.jpeg" alt="Image" class="img-fluid">
             </figure>
           </div>
           <div class="col-lg-6 pl-md-5">
@@ -397,7 +430,8 @@
                                         Post military service, I studied Business and Finance at Fordham University, where I developed a keen understanding of economic trends 
                                         and corporate strategy. I then earned a Master's in Data Science from the University of Virginia which included coursework in Statistics, 
                                         Computer Science, Machine Learning, Big Data Systems, and working as a student researcher for a project in 
-                                        the discovery of material physics using computer vision and deep learning. I also interned in Quantitative Analytics at a major bank.<br><br>
+                                        the discovery of material physics using computer vision and deep learning. 
+                                        I also interned in Quantitative Analytics at Wells Fargo.<br><br>
               
                                         Whether it's to connect, collaborate, or discuss potential opportunities, I invite you to reach out. Thanks for visiting my page, 
                                         and I look forward to connecting with you!</p>
@@ -601,7 +635,6 @@
           <div class="col-12 text-center">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with Colorlib</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
           </div>
